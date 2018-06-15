@@ -18,6 +18,9 @@ import itertools as it
 print(' '.join(('({}, {})'.format(len(list(g)), x) for x,g in it.groupby(input())))) # input 1222311 #output (1, 1) (3, 2) (1, 3) (2, 1)
 
 #itertools.combinations()
+#A = [1,1,3,3,3]
+#print list(combinations(A,4))
+#[(1, 1, 3, 3), (1, 1, 3, 3), (1, 1, 3, 3), (1, 3, 3, 3), (1, 3, 3, 3)]
 from itertools import combinations
 a=input()
 s=a.split(' ')
