@@ -32,3 +32,18 @@ for i in range(1,int(s[1])+1,1):
 for i in range(0,len(b),1):
     for j in range(0,len(b[i]),1):
         print(*b[i][j],sep="")
+#We can use the type() function to know which class a variable or a value belongs to and
+#isinstance() function to check if it belongs to a particular class.
+a = 5
+# Output: <class 'int'>
+print(type(a))
+
+# Output: <class 'float'>
+print(type(5.0))
+
+# Output: (8+3j)
+c = 5 + 3j
+print(c + 3)
+
+# Output: True
+print(isinstance(c, complex))
