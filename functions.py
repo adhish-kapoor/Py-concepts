@@ -47,3 +47,25 @@ print(c + 3)
 
 # Output: True
 print(isinstance(c, complex))
+
+#zfill() method returns a copy of the string with '0' chars padded to the left
+# Takes a single parameter which is the length of the returned string
+a="adhish kapoor"
+print(a.zfill(15))            # output 00adhish kapoor
+
+#find() method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
+#The find() method takes maximum of three parameters:
+#sub - It's the substring to be searched in the str string.
+#start and end (optional) - substring is searched within str[start:end]
+quote = 'Let it be, let it be, let it be'
+
+result = quote.find('let it')
+print("Substring 'let it':", result) # output Substring 'let it': 11
+
+#center() returns a string which is padded with the specified character.
+#The center() method takes two arguments:
+#width - length of the string with padded characters
+#fillchar (optional) - padding character
+string = "Python is awesome"
+new_string = string.center(24, '*')    # '*' is fillchar
+print("Centered String: ", new_string) # output Centered String:  ***Python is awesome****
