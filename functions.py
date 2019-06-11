@@ -68,4 +68,43 @@ print("Substring 'let it':", result) # output Substring 'let it': 11
 #fillchar (optional) - padding character
 string = "Python is awesome"
 new_string = string.center(24, '*')    # '*' is fillchar
-print("Centered String: ", new_string) # output Centered String:  ***Python is awesome****
+print("Centered String: ", new_string) # output Centered String:  ***Python is awesome
+
+# Anonymous Functions
+# we can use lambda to create small anonymous funcs
+
+# Function definition is here
+sum = lambda arg1, arg2: arg1 + arg2;
+
+# Now you can call sum as a function
+print "Value of total : ", sum( 10, 20 ) # 30
+print "Value of total : ", sum( 20, 20 ) # 40
+
+# return statement
+#The statement return [expression] exits a function, optionally passing back an expression to the caller. 
+#A return statement with no arguments is the same as return None.
+
+# Function definition is here
+def sum( arg1, arg2 ):
+   # Add both the parameters and return them."
+   total = arg1 + arg2
+   print "Inside the function : ", total # 30
+   return total;
+
+# Now you can call sum function
+total = sum( 10, 20 );
+print "Outside the function : ", total  # 30
+
+# Scope of Variables
+
+total = 0; # This is global variable.
+# Function definition is here
+def sum( arg1, arg2 ):
+   # Add both the parameters and return them."
+   total = arg1 + arg2; # Here total is local variable.
+   print "Inside the function local total : ", total # 30
+   return total;
+
+# Now you can call sum function
+sum( 10, 20 );
+print "Outside the function global total : ", total # 0
