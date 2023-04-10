@@ -44,7 +44,7 @@ Whereas in the case of other methods self refers to the object whose method was 
 Q8 How to remove values from a Python array?
 - The elements can be removed from a Python array using the remove() or pop() function.
 
-Q9 x = "Mindmajix Online Training"
+Q9 a = "Mindmajix Online Training"
 print(a.split())
 
 - [‘Mindmajix’, ‘Online’, ‘Training’]
